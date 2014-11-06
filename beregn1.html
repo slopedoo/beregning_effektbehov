@@ -8,12 +8,19 @@
 
         function calc() {
             var spenning = document.getElementById("one").value;
+            spenning = spenning.replace(/,/g, '.');
             var faser = document.getElementById("two").value;
+            faser = faser.replace(/,/g, '.');
             var materiale = document.getElementById("three").value;
+            materiale = materiale.replace(/,/g, '.');
             var tverrsnitt = document.getElementById("four").value;
+            tverrsnitt = tverrsnitt.replace(/,/g, '.');
             var lengde = document.getElementById("five").value;
+            lengde = lengde.replace(/,/g, '.');
             var strom = document.getElementById("six").value;
+            strom = strom.replace(/,/g, '.');
             var phi = document.getElementById("seven").value;
+            phi = phi.replace(/,/g, '.');
             
             var ro=0;
             var fase=0;

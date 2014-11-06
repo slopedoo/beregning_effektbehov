@@ -8,18 +8,25 @@
       }
       function calc() {
         one = document.autoSumForm.firstBox.value;
+        one = one.replace(/,/g, '.');
         document.autoSumForm.secondBox.value = Math.round(((one*0.013)/3)*1) / 1 + " kW";
         two = document.autoSumForm.thirdBox.value;
+        two = two.replace(/,/g, '.');
         document.autoSumForm.fourthBox.value = Math.round((two*3) * 1) / 1 + " kW";
         three = document.autoSumForm.fifthBox.value;
+        three = three.replace(/,/g, '.');
         document.autoSumForm.sixthBox.value = (three*1) + " kW";
         four = document.autoSumForm.seventhBox.value;
+        four = four.replace(/,/g, '.');
         document.autoSumForm.eigthBox.value = Math.round((four*0.002)*1)/1 + " kW";
         five = document.autoSumForm.ninthBox.value;
+        five = five.replace(/,/g, '.');
         document.autoSumForm.tenthBox.value = Math.round((five*0.002)*1)/1 + " kW";
         six = document.autoSumForm.eleventhBox.value;
+        six = six.replace(/,/g, '.');
         document.autoSumForm.twelvthBox.value = (six*60) + " kW";
         seven = document.autoSumForm.thirteenthBox.value;
+        seven = seven.replace(/,/g, '.');
         document.autoSumForm.fourteenthBox.value = (seven*20) + " kW";
 
         eight = document.autoSumForm.forsyningsspenning.value;
@@ -53,7 +60,7 @@
         margin-left:10px;
       }
       #printList{
-      	display:inline;
+      	display:none;
       }
       #printList li {
         margin-left:50px;
@@ -84,10 +91,15 @@
           margin-left:0px;
         }
         
-        #printList{
-      	display:inline;
-      	margin-left:300px;
-      	margin-right:300px;
+        #printList {
+          display:inline;
+        }
+        
+        #printList li{
+      	  margin-left:50px;
+      	  margin-right:50px;
+      	  margin-top:10px;
+      	  text-align:left;
       	}
       }
     </style>
