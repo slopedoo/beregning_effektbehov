@@ -33,7 +33,7 @@
         document.autoSumForm.fifteenthBox.value = Math.round((((one*0.013)/3) + (two*3) + (three*1) + (four*0.002) + (five*0.002) + (six*60) + (seven*20)) * 1) / 1 + " kW";
         ninth = document.autoSumForm.fifteenthBox.value;
         document.autoSumForm.sixteenthBox.value = Math.round(((((((one*0.013)/3) + (two*3) + (three*1) + (four*0.002) + (five*0.002) + (six*60) + (seven*20)) * 1000) / 1.73) / eight)*1)/1 + " A";
-        document.autoSumForm.seventeenthBox.value = Math.round((((((((one*0.013)/3) + (two*3) + (three*1) + (four*0.002) + (five*0.002) + (six*60) + (seven*20)) * 1000) / 1.73) / eight)*1)/1) * 1.2 + " A";
+        document.autoSumForm.seventeenthBox.value = Math.round(((((((((one*0.013)/3) + (two*3) + (three*1) + (four*0.002) + (five*0.002) + (six*60) + (seven*20)) * 1000) / 1.73) / eight)*1)/1) * 1.2) + " A";
 
       }
       function stopCalc() {
@@ -50,8 +50,6 @@
       }
       .logo {
         display:none;
-        position:absolute;
-        margin-left:550px;
       }
       #tekst {
         font-family:Monospace;
@@ -71,8 +69,6 @@
       @media print {
         .logo {
           display:inline;
-          position:absolute;
-          margin-left:550px;
         }
         
         .nullstill {
