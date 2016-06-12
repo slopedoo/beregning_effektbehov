@@ -9,7 +9,7 @@
       function calc() {
         one = document.autoSumForm.firstBox.value;
         one = one.replace(/,/g, '.');
-        document.autoSumForm.secondBox.value = Math.round(((one*0.013)/3)*1) / 1 + " kW";
+        document.autoSumForm.secondBox.value = Math.round((one*0.013)*1) / 1 + " kW";
         two = document.autoSumForm.thirdBox.value;
         two = two.replace(/,/g, '.');
         document.autoSumForm.fourthBox.value = Math.round((two*3) * 1) / 1 + " kW";
